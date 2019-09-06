@@ -1,8 +1,11 @@
 version: 2.0
 jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.4.2-jessie-node
-    steps:
-      - checkout
-      - run: echo "Hello World test"
+ build:
+   docker:
+     - image: 2gtaisuke/php-fpm7.3
+   steps:
+     - run:
+         name: 最初の一歩
+         command: |
+           echo 'Hello World!'
+           echo 'This is the delivery pipeline'
