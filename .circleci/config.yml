@@ -5,5 +5,4 @@ jobs:
       - image: circleci/ruby:2.4.2-jessie-node
     steps:
       - checkout
-      - run: nocommmands
-#      - run: echo "Hello World test"
+      - run: echo "Hello World test"
